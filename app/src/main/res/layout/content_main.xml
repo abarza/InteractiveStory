@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/content_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.story.interactive.abarza.interactivestory.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+  <Button
+      android:id="@+id/startButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:text="START YOUR ADVENTURE"/>
+
+  <ImageView
+      android:id="@+id/titleImage"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      android:adjustViewBounds="true"
+      android:contentDescription="Signals from Mars"
+      android:scaleType="fitXY"
+      app:srcCompat="@drawable/main_title"/>
+
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:inputType="textPersonName"
+      android:ems="10"
+      android:layout_above="@+id/startButton"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:id="@+id/nameEditText"
+      android:hint="Enter your name to begin"
+      android:singleLine="true"/>
+</RelativeLayout>
