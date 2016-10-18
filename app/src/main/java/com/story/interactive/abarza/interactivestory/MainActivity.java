@@ -1,5 +1,6 @@
 package com.story.interactive.abarza.interactivestory;
 
+import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -32,15 +33,24 @@ public class MainActivity extends AppCompatActivity {
       public void onClick(View v) {
         String name = mNameField.getText().toString();
         Toast.makeText(MainActivity.this, name, Toast.LENGTH_SHORT).show();
+        startActivity(name);
       }
     });
 
   }
 
-  public void bindUi() {
+  private void bindUi() {
     mNameField = (EditText) findViewById(R.id.nameEditText);
     mStartButton = (Button) findViewById(R.id.startButton);
   }
+
+  private void startActivity(String name) {
+    Intent intent = new Intent(this, StoryActivity.class);
+    intent.putExtra(getString(R.string.key_name), name);
+    startActivity(intent);
+  }
+
+
 
 
 }
