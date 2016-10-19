@@ -1,13 +1,18 @@
-package com.story.interactive.abarza.interactivestory;
+package com.story.interactive.abarza.interactivestory.ui;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.story.interactive.abarza.interactivestory.R;
+import com.story.interactive.abarza.interactivestory.model.Page;
+
 public class StoryActivity extends AppCompatActivity {
 
+
   public  static final String TAG = StoryActivity.class.getSimpleName();
+
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -21,4 +26,5 @@ public class StoryActivity extends AppCompatActivity {
     }
     Log.d(TAG, name);
   }
+
 }

@@ -9,6 +9,6 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.story.interactive.abarza.interactivestory.StoryActivity">
+    tools:context="com.story.interactive.abarza.interactivestory.ui.StoryActivity">
 
 </RelativeLayout>
