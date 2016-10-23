@@ -17,7 +17,9 @@
       android:layout_alignParentBottom="true"
       android:layout_alignParentLeft="true"
       android:layout_alignParentStart="true"
-      android:text="START YOUR ADVENTURE"/>
+      android:text="START YOUR ADVENTURE"
+      android:background="#FFF"
+      android:textColor="#FF3A8AEC"/>
 
   <ImageView
       android:id="@+id/titleImage"
@@ -36,10 +38,10 @@
       android:layout_height="wrap_content"
       android:inputType="textPersonName"
       android:ems="10"
-      android:layout_above="@+id/startButton"
-      android:layout_alignParentLeft="true"
-      android:layout_alignParentStart="true"
       android:id="@+id/nameEditText"
       android:hint="Enter your name to begin"
-      android:singleLine="true"/>
+      android:singleLine="true"
+      android:layout_above="@+id/startButton"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"/>
 </RelativeLayout>
